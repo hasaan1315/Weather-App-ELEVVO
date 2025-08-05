@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <!-- 🔍 CITY SEARCH FORM -->
+      <form id="city-form" class="search-box" onsubmit="return false;">
+      <input type="text" id="search-input" placeholder="Enter city name..." />
+      <button type="button" id="search-btn">Search</button>
+      </form>
+
+      <!-- 📍 CITY & DATE -->
+      <div class="location-date">
+        <h2 id="city">--</h2>
+        <span id="last-updated">Last Updated --</span>
+      </div>
+
+      <!-- 🌡️ TEMP -->
+      <div class="temp-icon">
+        <h1 id="temperature">--°C</h1>
+        <p id="weather-desc">--</p>
+      </div>
+    </header>
+
+    <section class="forecast">
+      <h3>Forecast Weather</h3>
+      <canvas id="forecastChart"></canvas>
+    </section>
+
+    <section class="stats-grid">
+      <div class="card"><span>Humidity</span><p id="humidity">--%</p></div>
+      <div class="card"><span>Wind Speed</span><p id="wind">-- Kmph</p></div>
+      <div class="card"><span>Visibility</span><p id="visibility">-- KM</p></div>
+      <div class="card"><span>Pressure</span><p id="pressure">-- in</p></div>
+      <div class="card"><span>UV Index</span><p id="uv">--</p></div>
+      <div class="card"><span>Precipitation</span><p id="precip">-- mm</p></div>
+    </section>
+
+    <section class="sun-times">
+      <div><h4>Sunrise</h4><p id="sunrise">--</p></div>
+      <div><h4>Sunset</h4><p id="sunset">--</p></div>
+    </section>
+
+    <section class="aqi">
+      <h3>Air Quality Index</h3>
+      <div id="aqi-data">
+        <p>PM10: <span id="pm10">--</span></p>
+        <p>NO2: <span id="no2">--</span></p>
+        <p>CO: <span id="co">--</span></p>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
