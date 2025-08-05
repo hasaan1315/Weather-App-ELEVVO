@@ -13,7 +13,7 @@ The app allows users to **search for any city** and displays **real-time weather
 
 ## 📸 Preview Screenshot
 
-![Weather App Screenshot](https://i.postimg.cc/Y2Q6HPqb/weather-preview.png)
+![Weather App Screenshot](https://i.postimg.cc/mg5W4Z4Q/image.png)
 
 > ☀️ A visually appealing and fully responsive weather app with live data, search functionality, and charted forecast.
 
